@@ -15,7 +15,7 @@ class F1 extends Cars {
         this.speed = speed;
     }
     start() {
-        console.log(this.model+ " самая большая скорость: "+ this.speed + " km/h");
+        console.log(this.model+ " заведена. Самая большая скорость: "+ this.speed + " km/h");
     }
 }
 class SportCars extends F1 {
@@ -24,7 +24,7 @@ class SportCars extends F1 {
         this.seat = seat;
     }
     start(){
-        console.log(this.model + " — спорткар на " + this.seat + " места, скорость: " + this.speed + " km/h");
+        console.log(this.model + " заведена. Спорткар на " + this.seat + " места, скорость: " + this.speed + " km/h");
     }
 }
 class Vintage extends SportCars {
@@ -33,7 +33,7 @@ class Vintage extends SportCars {
         this.years = years;
     }
     start(){
-        console.log(this.model + " — винтажная машина " + this.years + " года");
+        console.log(this.model + " заведена. Винтажная машина " + this.years + " года");
     }
 }
 const f1Cars = new F1("Ferrari", "red", 4, 375);
